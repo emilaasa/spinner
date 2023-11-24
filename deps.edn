@@ -1,7 +1,7 @@
 {:paths ["src" "resources"]
  :deps {org.clojure/clojure {:mvn/version "1.11.1"}}
  :aliases
- {:run {:deps {org.babashka/cli {:mvn/version "0.4.39"}}
+ {:spin {:deps {org.babashka/cli {:mvn/version "0.4.39"}}
         :exec-fn spinner.spinner/-main
         :main-opts ["-m" "babashka.cli.exec"]}
   :test
